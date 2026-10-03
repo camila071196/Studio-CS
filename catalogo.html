@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Serviços - CS Stúdio Camila Santos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .container {
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+    }
+    /* Estilo do Topo / Header */
+    .header {
+      margin-bottom: 25px;
+    }
+    .header h1 {
+      font-size: 28px;
+      letter-spacing: 2px;
+      color: #e5a985; /* Tom Rose Gold */
+      font-weight: normal;
+    }
+    .header p {
+      font-size: 13px;
+      letter-spacing: 3px;
+      color: #cccccc;
+      margin-top: 5px;
+    }
+    .title-section {
+      font-size: 22px;
+      margin-bottom: 30px;
+      color: #e5a985;
+      letter-spacing: 1px;
+    }
+
+    /* Cards dos Serviços */
+    .service-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .service-img {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      border: 2px solid #e5a985;
+      object-fit: cover;
+      margin-right: -20px;
+      z-index: 2;
+      background-color: #111;
+    }
+    .service-info {
+      flex: 1;
+      background: linear-gradient(135deg, #e5a985, #c9825b);
+      color: #000000;
+      padding: 15px 20px 15px 30px;
+      border-radius: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .service-name {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: left;
+    }
+    .service-price {
+      font-size: 16px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* Botão de Voltar */
+    .btn-back {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: transparent;
+      color: #ffffff;
+      border: 1px solid #e5a985;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+    .btn-back:hover {
+      background-color: #e5a985;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Cabeçalho -->
+    <div class="header">
+      <h1>CS STÚDIO</h1>
+      <p>CAMILA SANTOS</p>
+    </div>
+
+    <h2 class="title-section">Meus Serviços:</h2>
+
+    <!-- Serviço 1: Volume Gatinho -->
+    <a href="https://wa.me/5511985626577?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20o%20Volume%20Gatinho." class="service-card" target="_blank">
+      <!-- Substitua por uma imagem do seu trabalho -->
+      <img src="gatinho.jpg" alt="Volume Gatinho" class="service-img">
+      <div class="service-info">
+        <span class="service-name">Volume Gatinho</span>
+        <span class="service-price">R$65,00</span>
+      </div>
+    </a>
+
+    <!-- Serviço 2: Volume Esquilo -->
+    <a href="https://wa.me/5511985626577?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20o%20Volume%20Esquilo." class="service-card" target="_blank">
+      <!-- Substitua por uma imagem do seu trabalho -->
+      <img src="esquilo.jpg" alt="Volume Esquilo" class="service-img">
+      <div class="service-info">
+        <span class="service-name">Volume Esquilo</span>
+        <span class="service-price">R$120,00</span>
+      </div>
+    </a>
+
+    <!-- Serviço 3: Volume Brasileiro -->
+    <a href="https://wa.me/5511985626577?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20o%20Volume%20Brasileiro." class="service-card" target="_blank">
+      <!-- Substitua por uma imagem do seu trabalho -->
+      <img src="brasileiro.jpg" alt="Volume Brasileiro" class="service-img">
+      <div class="service-info">
+        <span class="service-name">Volume Brasileiro</span>
+        <span class="service-price">R$100,00</span>
+      </div>
+    </a>
+
+    <!-- Botão para retornar à página principal -->
+    <a href="index.html" class="btn-back">← Voltar para o Início</a>
+
+  </div>
+
+</body>
+</html>
+
+
